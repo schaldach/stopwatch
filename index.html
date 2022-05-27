@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stopwatch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <section class="select">
+        <div onclick="setvis('watch')" id="watch" class="content">Stopwatch</div>
+        <div onclick="setvis('timer')" id="timer" class="content">Timer</div>
+    </section>
+
+    <main>
+        <section class="content" id="watch">
+            <div class="stopwatch">
+                <div class="minutes" id="minute">00</div>:
+                <div class="minutes" id="second">00</div>:
+                <div class="miliseconds" id="milisecond">0</div>
+            </div>
+            <div class="buttons">
+                <button id="start" onclick="start()">Start</button>
+                <button id="pause" onclick="pause()">Pause</button>
+            </div>  
+        </section>
+        <section class="content" id="timer">
+            <div class="stopwatch">
+                <div class="minutes" id="minutet">00</div>:
+                <div class="minutes" id="secondt">00</div>:
+                <div class="miliseconds" id="milisecondt">0</div>
+            </div>
+            <div class="buttons">
+                <button id="starttimer" onclick="starttimer()">Start</button>
+                <button id="pausetimer" onclick="pausetimer()">Pause</button>
+                <input placeholder="Time desired (20305)" type="number" id="timertime" class="inputs">
+            </div>
+        </section>
+    </main>
+
+    <script src='script.js'></script>
+</body>
+</html>
